@@ -633,15 +633,6 @@ header .company-logo .secondary-color {
 
   transition: transform var(--transition) var(--cubic);
 }
-
-.modal-link:hover .modal-btn {
-  transform: scale(1.05) rotate(270deg);
-}
-
-.modal-link:hover {
-  transform: scale(1.05);
-}
-
 .modal-btn {
   display: block;
   width: 18px;
@@ -654,6 +645,16 @@ header .company-logo .secondary-color {
   display: block;
   fill: #000000;
   transform-origin: 18px 18px;
+}
+.modal-link:hover .modal-btn {
+  transform: scale(1.05) rotate(270deg);
+}
+
+.modal-link:hover {
+  transform: scale(1.05);
+}
+.modal-link:hover .modal-svg {
+  fill: var(--accent-color);
 }
 
 /* ---------------- PORTFOLIO PAGE---------------- */
