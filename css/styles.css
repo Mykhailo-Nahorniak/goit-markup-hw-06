@@ -614,12 +614,15 @@ header .company-logo .secondary-color {
   border-radius: 4px;
 
   background-color: var(--body-bg-color);
-  padding: 8px;
+  padding: 40px;
 
   transition: transform var(--transition) var(--cubic);
 }
 
 .modal-link {
+  position: absolute;
+  right: 8px;
+  top: 8px;
   width: 30px;
   height: 30px;
   line-height: 0;
@@ -655,6 +658,14 @@ header .company-logo .secondary-color {
 }
 .modal-link:hover .modal-svg {
   fill: var(--accent-color);
+}
+.modal-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--header-color);
 }
 
 /* ---------------- PORTFOLIO PAGE---------------- */
