@@ -735,13 +735,14 @@ header .company-logo .secondary-color {
   border-radius: 4px;
   background-color: transparent;
   padding-left: 42px;
+
+  transition: outline var(--transition) var(--cubic);
 }
 
 .modal-input:focus-visible,
 .modal-comment:focus-visible {
   outline: 1px solid #2196f3;
   border: 0;
-  border-radius: 4px;
 }
 
 .modal-input:focus-visible + .form-input-icon {
@@ -757,6 +758,8 @@ header .company-logo .secondary-color {
 
   width: 18px;
   height: 18px;
+
+  transition: fill var(--transition) var(--cubic);
 }
 
 .send-btn {
@@ -807,8 +810,11 @@ header .company-logo .secondary-color {
   display: flex;
 
   border: 2px solid #000000;
-  border-radius: 2px;
+  border-radius: 3px;
   margin-right: 7px;
+
+  transition: border var(--transition) var(--cubic),
+    background-color var(--transition) var(--cubic);
 }
 
 .form-checkbox-icon {
@@ -816,6 +822,8 @@ header .company-logo .secondary-color {
   width: 15px;
   height: 15px;
   opacity: 0;
+
+  transition: opacity var(--transition) var(--cubic);
 }
 
 .checkbox-input:checked + .check-box {
